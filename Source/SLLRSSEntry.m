@@ -20,8 +20,8 @@
 -(SLLRSSEntry *)initWithTitle:(NSString *)entryTitle andLink:(NSString *)entryLink
 {
     if (self = [super init]) {
-        self.entryTitle = entryTitle;
-        self.entryLink = entryLink;
+        self.title = entryTitle;
+        self.link = entryLink;
     }
     
     return self;
@@ -29,7 +29,7 @@
 
 - (NSString *)description
 {
-    return [NSString stringWithFormat:@"SLLRSSEntry, title:%@, date:%@, author:%@, link:%@", self.entryTitle, self.entryDate, self.entryAuthor, self.entryLink];
+    return [NSString stringWithFormat:@"SLLRSSEntry, title:%@, date:%@, author:%@, link:%@", self.title, self.date, self.author, self.link];
 }
 
 @end

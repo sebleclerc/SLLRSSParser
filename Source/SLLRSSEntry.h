@@ -15,12 +15,11 @@
 
 - (NSString *)description;
 
-@property (nonatomic, strong) NSString *entryTitle;
-@property (nonatomic, strong) NSString *entryLink;
-@property (nonatomic, strong) NSString *entryCommentsLink;
-@property (nonatomic, strong) NSString *entryDate;
-@property (nonatomic, strong) NSString *entryAuthor;
-@property (nonatomic, strong) NSString *entryExcerpt;
-@property (nonatomic, strong) NSString *entryContent;
+@property (nonatomic, strong) NSString *title;
+@property (nonatomic, strong) NSString *link;
+@property (nonatomic, strong) NSString *date;
+@property (nonatomic, strong) NSString *author;
+@property (nonatomic, strong) NSString *excerpt;
+@property (nonatomic, strong) NSString *content;
 
 @end

@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E738EE9A0A1B51D479AD1D3 /* libPods-SLLRSSParserDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95D0D9925CB1943438A600FC /* libPods-SLLRSSParserDemo.a */; };
+		8ED573D71D6801930088227B /* SLLRSSEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED573D41D6801930088227B /* SLLRSSEntry.m */; };
+		8ED573D81D6801930088227B /* SLLRSSParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED573D61D6801930088227B /* SLLRSSParser.m */; };
+		8EEF46371D68091900D09F62 /* SLLRSSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF46361D68091900D09F62 /* SLLRSSTableViewController.m */; };
+		8EF01BE81D656147003AB556 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF01BE71D656147003AB556 /* main.m */; };
+		8EF01BEB1D656147003AB556 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF01BEA1D656147003AB556 /* AppDelegate.m */; };
+		8EF01BF11D656147003AB556 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EF01BEF1D656147003AB556 /* Main.storyboard */; };
+		8EF01BF31D656147003AB556 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EF01BF21D656147003AB556 /* Assets.xcassets */; };
+		8EF01BF61D656147003AB556 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EF01BF41D656147003AB556 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A56B3F8F8AF852D330B4553 /* Pods-SLLRSSParserDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SLLRSSParserDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SLLRSSParserDemo/Pods-SLLRSSParserDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		629F167D3A09866B36943147 /* Pods-SLLRSSParserDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SLLRSSParserDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SLLRSSParserDemo/Pods-SLLRSSParserDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8ED573D31D6801930088227B /* SLLRSSEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SLLRSSEntry.h; path = ../Source/SLLRSSEntry.h; sourceTree = "<group>"; };
+		8ED573D41D6801930088227B /* SLLRSSEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SLLRSSEntry.m; path = ../Source/SLLRSSEntry.m; sourceTree = "<group>"; };
+		8ED573D51D6801930088227B /* SLLRSSParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SLLRSSParser.h; path = ../Source/SLLRSSParser.h; sourceTree = "<group>"; };
+		8ED573D61D6801930088227B /* SLLRSSParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SLLRSSParser.m; path = ../Source/SLLRSSParser.m; sourceTree = "<group>"; };
+		8EEF46351D68091900D09F62 /* SLLRSSTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLLRSSTableViewController.h; sourceTree = "<group>"; };
+		8EEF46361D68091900D09F62 /* SLLRSSTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLLRSSTableViewController.m; sourceTree = "<group>"; };
+		8EF01BE31D656147003AB556 /* SLLRSSParserDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SLLRSSParserDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EF01BE71D656147003AB556 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8EF01BE91D656147003AB556 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8EF01BEA1D656147003AB556 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8EF01BF01D656147003AB556 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8EF01BF21D656147003AB556 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8EF01BF51D656147003AB556 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8EF01BF71D656147003AB556 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95D0D9925CB1943438A600FC /* libPods-SLLRSSParserDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SLLRSSParserDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8EF01BE01D656147003AB556 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E738EE9A0A1B51D479AD1D3 /* libPods-SLLRSSParserDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E4D370C1D6561B00064FA7D /* SLLRSSParser */ = {
+			isa = PBXGroup;
+			children = (
+				8ED573D31D6801930088227B /* SLLRSSEntry.h */,
+				8ED573D41D6801930088227B /* SLLRSSEntry.m */,
+				8ED573D51D6801930088227B /* SLLRSSParser.h */,
+				8ED573D61D6801930088227B /* SLLRSSParser.m */,
+			);
+			name = SLLRSSParser;
+			sourceTree = "<group>";
+		};
+		8EF01BDA1D656147003AB556 = {
+			isa = PBXGroup;
+			children = (
+				8E4D370C1D6561B00064FA7D /* SLLRSSParser */,
+				8EF01BE51D656147003AB556 /* SLLRSSParserDemo */,
+				8EF01BE41D656147003AB556 /* Products */,
+				A2ADA1DAD1AFD56EA2CF2D15 /* Pods */,
+				95DC4A69E70A6255A25AAA55 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8EF01BE41D656147003AB556 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8EF01BE31D656147003AB556 /* SLLRSSParserDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8EF01BE51D656147003AB556 /* SLLRSSParserDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8EEF46351D68091900D09F62 /* SLLRSSTableViewController.h */,
+				8EEF46361D68091900D09F62 /* SLLRSSTableViewController.m */,
+				8EF01BE61D656147003AB556 /* Supporting Files */,
+			);
+			path = SLLRSSParserDemo;
+			sourceTree = "<group>";
+		};
+		8EF01BE61D656147003AB556 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8EF01BE91D656147003AB556 /* AppDelegate.h */,
+				8EF01BEA1D656147003AB556 /* AppDelegate.m */,
+				8EF01BEF1D656147003AB556 /* Main.storyboard */,
+				8EF01BF21D656147003AB556 /* Assets.xcassets */,
+				8EF01BF41D656147003AB556 /* LaunchScreen.storyboard */,
+				8EF01BF71D656147003AB556 /* Info.plist */,
+				8EF01BE71D656147003AB556 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		95DC4A69E70A6255A25AAA55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95D0D9925CB1943438A600FC /* libPods-SLLRSSParserDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2ADA1DAD1AFD56EA2CF2D15 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A56B3F8F8AF852D330B4553 /* Pods-SLLRSSParserDemo.debug.xcconfig */,
+				629F167D3A09866B36943147 /* Pods-SLLRSSParserDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8EF01BE21D656147003AB556 /* SLLRSSParserDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EF01BFA1D656147003AB556 /* Build configuration list for PBXNativeTarget "SLLRSSParserDemo" */;
+			buildPhases = (
+				2C20045154F273A663CC0419 /* [CP] Check Pods Manifest.lock */,
+				8EF01BDF1D656147003AB556 /* Sources */,
+				8EF01BE01D656147003AB556 /* Frameworks */,
+				8EF01BE11D656147003AB556 /* Resources */,
+				E2D46FF98DC84CA163EF58BF /* [CP] Embed Pods Frameworks */,
+				C653A69F545BC7AE636C2F58 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SLLRSSParserDemo;
+			productName = SLLRSSParserDemo;
+			productReference = 8EF01BE31D656147003AB556 /* SLLRSSParserDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8EF01BDB1D656147003AB556 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Sébastien Leclerc Lavallée";
+				TargetAttributes = {
+					8EF01BE21D656147003AB556 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 8EF01BDE1D656147003AB556 /* Build configuration list for PBXProject "SLLRSSParserDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8EF01BDA1D656147003AB556;
+			productRefGroup = 8EF01BE41D656147003AB556 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8EF01BE21D656147003AB556 /* SLLRSSParserDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8EF01BE11D656147003AB556 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EF01BF61D656147003AB556 /* LaunchScreen.storyboard in Resources */,
+				8EF01BF31D656147003AB556 /* Assets.xcassets in Resources */,
+				8EF01BF11D656147003AB556 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C20045154F273A663CC0419 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C653A69F545BC7AE636C2F58 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SLLRSSParserDemo/Pods-SLLRSSParserDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2D46FF98DC84CA163EF58BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SLLRSSParserDemo/Pods-SLLRSSParserDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8EF01BDF1D656147003AB556 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ED573D71D6801930088227B /* SLLRSSEntry.m in Sources */,
+				8EEF46371D68091900D09F62 /* SLLRSSTableViewController.m in Sources */,
+				8ED573D81D6801930088227B /* SLLRSSParser.m in Sources */,
+				8EF01BEB1D656147003AB556 /* AppDelegate.m in Sources */,
+				8EF01BE81D656147003AB556 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8EF01BEF1D656147003AB556 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8EF01BF01D656147003AB556 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8EF01BF41D656147003AB556 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8EF01BF51D656147003AB556 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8EF01BF81D656147003AB556 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8EF01BF91D656147003AB556 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8EF01BFB1D656147003AB556 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A56B3F8F8AF852D330B4553 /* Pods-SLLRSSParserDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SLLRSSParserDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.sebleclerc.SLLRSSParserDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8EF01BFC1D656147003AB556 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 629F167D3A09866B36943147 /* Pods-SLLRSSParserDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SLLRSSParserDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.sebleclerc.SLLRSSParserDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8EF01BDE1D656147003AB556 /* Build configuration list for PBXProject "SLLRSSParserDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EF01BF81D656147003AB556 /* Debug */,
+				8EF01BF91D656147003AB556 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EF01BFA1D656147003AB556 /* Build configuration list for PBXNativeTarget "SLLRSSParserDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EF01BFB1D656147003AB556 /* Debug */,
+				8EF01BFC1D656147003AB556 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8EF01BDB1D656147003AB556 /* Project object */;
+}
