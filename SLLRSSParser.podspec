@@ -64,7 +64,7 @@ Pod::Spec.new do |s|
   #  Specify the location from where the source should be retrieved.
   #  Supports git, hg, bzr, svn and HTTP.
   #
-  s.source       = { :git => "https://github.com/sebleclerc/SLLRSSParser.git", :commit => "d1900d7a0d7313e8c814a027e107f2368939c17a" }
+  s.source       = { :git => "https://github.com/sebleclerc/SLLRSSParser.git", :tag => "v0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
