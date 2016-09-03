@@ -30,21 +30,16 @@
 
 - (void)parseRSSFeed:(SLLRSSParserCompleted)completeBlock
 {
-    TBXMLSuccessBlock successBlock = ^(TBXML *tbxmlDocument)
-    {
+    TBXMLSuccessBlock successBlock = ^(TBXML *tbxmlDocument) {
         // If TBXML found a root node, process element and iterate all children
-        if (tbxmlDocument.rootXMLElement->firstChild)
-        {
-//            NSLog(@"Root element %@",[TBXML elementName:tbxmlDocument.rootXMLElement]);
+        if (tbxmlDocument.rootXMLElement->firstChild) {
             [self parseRSSItems:tbxmlDocument.rootXMLElement->firstChild];
-            
             completeBlock(feedItems);
         }
     };
     
     // Create a failure block that gets called if something goes wrong
-    TBXMLFailureBlock failureBlock = ^(TBXML *tbxmlDocument, NSError * error)
-    {
+    TBXMLFailureBlock failureBlock = ^(TBXML *tbxmlDocument, NSError * error) {
         NSLog(@"Error! %@ %@", [error localizedDescription], [error userInfo]);
     };
     
@@ -57,23 +52,17 @@
 - (void) parseRSSItems:(TBXMLElement *)channelElement {
     NSMutableArray *rssEntries = [[NSMutableArray alloc] init];
     
-//    NSLog(@"Channel element %@",[TBXML elementName:channelElement]);
-    
-    if (channelElement->firstChild)
-    {
+    if (channelElement->firstChild) {
         TBXMLElement *currentItemElement = channelElement->firstChild;
         
         // Traverse all item elements
-        do
-        {
-            if ([[TBXML elementName:currentItemElement] isEqualToString:@"item"])
-            {
+        do {
+            if ([[TBXML elementName:currentItemElement] isEqualToString:@"item"]) {
                 SLLRSSEntry *currentEntry = [[SLLRSSEntry alloc] init];
             
                 currentEntry.title = [TBXML textForElement:[TBXML childElementNamed:@"title" parentElement:currentItemElement]];
                 currentEntry.link = [TBXML textForElement:[TBXML childElementNamed:@"link" parentElement:currentItemElement]];
                 currentEntry.date = [TBXML textForElement:[TBXML childElementNamed:@"pubDate" parentElement:currentItemElement]];
-//                currentEntry.entryAuthor = [TBXML textForElement:[TBXML childElementNamed:@"dc:creator" parentElement:currentItemElement]];
                 currentEntry.excerpt = [TBXML textForElement:[TBXML childElementNamed:@"description" parentElement:currentItemElement]];
                 currentEntry.content = [TBXML textForElement:[TBXML childElementNamed:@"content:encoded" parentElement:currentItemElement]];
                 

@@ -11,7 +11,6 @@
 @interface SLLRSSEntry : NSObject
 
 - (SLLRSSEntry *)init;
-- (SLLRSSEntry *)initWithTitle:(NSString *)entryTitle andLink:(NSString *)entryLink;
 
 - (NSString *)description;
 
