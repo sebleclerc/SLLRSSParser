@@ -19,7 +19,7 @@
 
 - (NSString *)description
 {
-    return [NSString stringWithFormat:@"SLLRSSEntry, title:%@, date:%@, author:%@, link:%@", self.title, self.date, self.author, self.link];
+    return [NSString stringWithFormat:@"SLLRSSEntry, title:%@, date:%@, author:%@, link:%@, imageUrL:%@", self.title, self.date, self.author, self.link, self.imageUrl];
 }
 
 @end

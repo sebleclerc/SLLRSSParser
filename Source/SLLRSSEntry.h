@@ -20,5 +20,6 @@
 @property (nonatomic, strong) NSString *author;
 @property (nonatomic, strong) NSString *excerpt;
 @property (nonatomic, strong) NSString *content;
+@property (nonatomic, strong) NSString *imageUrl;
 
 @end
