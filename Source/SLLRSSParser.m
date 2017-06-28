@@ -9,6 +9,22 @@
 #import "SLLRSSParser.h"
 #import "SLLRSSEntry.h"
 #import "TBXML+HTTP.h"
+#import <UIKit/UIKit.h>
+
+@interface NSString (HTMLChars)
+
+- (NSString *)stringByRemovingHTMLChars;
+
+@end
+
+@implementation NSString (HTMLChars)
+
+- (NSString *)stringByRemovingHTMLChars {
+    return [[self stringByReplacingOccurrencesOfString:@"&#39;" withString:@"'"]
+                    stringByReplacingOccurrencesOfString:@"&amp;" withString:@"&"];
+}
+
+@end
 
 @interface SLLRSSParser(){
     NSArray *feedItems;
@@ -60,7 +76,7 @@
             if ([[TBXML elementName:currentItemElement] isEqualToString:@"item"]) {
                 SLLRSSEntry *currentEntry = [[SLLRSSEntry alloc] init];
             
-                currentEntry.title = [TBXML textForElement:[TBXML childElementNamed:@"title" parentElement:currentItemElement]];
+                currentEntry.title = [[TBXML textForElement:[TBXML childElementNamed:@"title" parentElement:currentItemElement]] stringByRemovingHTMLChars];
                 currentEntry.link = [TBXML textForElement:[TBXML childElementNamed:@"link" parentElement:currentItemElement]];
                 currentEntry.date = [TBXML textForElement:[TBXML childElementNamed:@"pubDate" parentElement:currentItemElement]];
                 currentEntry.excerpt = [TBXML textForElement:[TBXML childElementNamed:@"description" parentElement:currentItemElement]];
