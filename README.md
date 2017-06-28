@@ -3,17 +3,24 @@
 SLLRSSParser is a simple RSS parser for Objective-C with ARC and blocks.
 
 ## Installation
-### Requirements
+### Cocoapods
 
-You need to have TBXML copied into the solution.
+The best and easiest method to install and use SLLRSSParser is with [CocoaPods](https://cocoapods.org). You simply add this line to your [Podfile](http://guides.cocoapods.org/using/using-cocoapods.html):
 
-### SLLRSSParser
+```
+pod 'SLLRSSParser'
+```
 
-You need to copy both files from the SLLRSSParse folder : 
-* SLLRSSParser.h / .m
+### Manual
+
+You need to have [TBXML](https://github.com/71squared/TBXML) copied into the solution. Copy everything from the TBXML-Code and TBXML-Headers folders.
+
+Then, you need to copy all the SLLRSSParser files:  
+* SLLRSSParser.h / .m  
+* SLLRSSEntry.h / .m
 
 ## Usage
-(see demo XCode project in '/SLLRSSParserDemo')
+(see demo XCode project in ```/SLLRSSParserDemo```)
 
 ```objective-c
 SLLRSSParser *parser = [[SLLRSSParser alloc] initWithFeedUrlString:@"http://www.sebleclerc.ca/feed"];
