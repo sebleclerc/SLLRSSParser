@@ -67,7 +67,10 @@
                 currentEntry.content = [TBXML textForElement:[TBXML childElementNamed:@"content:encoded" parentElement:currentItemElement]];
                 
                 TBXMLElement *imageElement = [TBXML childElementNamed:@"media:content" parentElement:currentItemElement];
-                currentEntry.imageUrl = [TBXML valueOfAttributeNamed:@"url" forElement:imageElement];
+
+                if (imageElement) {
+                    currentEntry.imageUrl = [TBXML valueOfAttributeNamed:@"url" forElement:imageElement];
+                }
                 
                 //Add current entry to list
                 [rssEntries addObject:currentEntry];
