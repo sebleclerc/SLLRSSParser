@@ -20,3 +20,9 @@ New entry field, imageUrl, for RSS entry ```media:content -> url```
 Fix issue with entry without media:content element.
 Fix parsing HTML characters.
 
+## [0.4.0] 2017-09-01
+### Added 
+New HTML chars to replace (<, > and @)
+
+### Fixed 
+Memory usage by using NSMutableString
