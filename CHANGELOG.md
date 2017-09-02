@@ -26,3 +26,7 @@ New HTML chars to replace (<, > and @)
 
 ### Fixed 
 Memory usage by using NSMutableString
+
+## [0.4.1] 2017-09-02
+### Fixed 
+HTML characters replacing really taking place

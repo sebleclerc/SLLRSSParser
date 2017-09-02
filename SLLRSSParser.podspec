@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SLLRSSParser"
-  s.version      = "0.4.0"
+  s.version      = "0.4.1"
   s.summary      = "Simple Objective-C RSS parser"
 
   # This description is used to generate tags and improve search results.
@@ -64,7 +64,7 @@ Pod::Spec.new do |s|
   #  Specify the location from where the source should be retrieved.
   #  Supports git, hg, bzr, svn and HTTP.
   #
-  s.source       = { :git => "https://github.com/sebleclerc/SLLRSSParser.git", :tag => "v0.4.0" }
+  s.source       = { :git => "https://github.com/sebleclerc/SLLRSSParser.git", :tag => "v0.4.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

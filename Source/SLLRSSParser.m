@@ -21,12 +21,12 @@
 
 - (NSString *)stringByRemovingHTMLChars {
     NSMutableString *mutableCopy = [self mutableCopy];
-    
-    [mutableCopy stringByReplacingOccurrencesOfString:@"&#39;" withString:@"'"];
-    [mutableCopy stringByReplacingOccurrencesOfString:@"&amp;" withString:@"&"];
-    [mutableCopy stringByReplacingOccurrencesOfString:@"&lt;" withString:@"<"];
-    [mutableCopy stringByReplacingOccurrencesOfString:@"&gt;" withString:@">"];
-    [mutableCopy stringByReplacingOccurrencesOfString:@"&#64;" withString:@"@"];
+
+    [mutableCopy replaceOccurrencesOfString:@"&#39;" withString:@"'" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [mutableCopy length])];
+    [mutableCopy replaceOccurrencesOfString:@"&amp;" withString:@"&" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [mutableCopy length])];
+    [mutableCopy replaceOccurrencesOfString:@"&lt;" withString:@"<" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [mutableCopy length])];
+    [mutableCopy replaceOccurrencesOfString:@"&gt;" withString:@">" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [mutableCopy length])];
+    [mutableCopy replaceOccurrencesOfString:@"&#64;" withString:@"@" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [mutableCopy length])];
     
     return mutableCopy;
 }
