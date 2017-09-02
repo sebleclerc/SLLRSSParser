@@ -24,6 +24,9 @@
     
     [mutableCopy stringByReplacingOccurrencesOfString:@"&#39;" withString:@"'"];
     [mutableCopy stringByReplacingOccurrencesOfString:@"&amp;" withString:@"&"];
+    [mutableCopy stringByReplacingOccurrencesOfString:@"&lt;" withString:@"<"];
+    [mutableCopy stringByReplacingOccurrencesOfString:@"&gt;" withString:@">"];
+    [mutableCopy stringByReplacingOccurrencesOfString:@"&#64;" withString:@"@"];
     
     return mutableCopy;
 }
