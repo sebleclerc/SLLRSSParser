@@ -20,8 +20,12 @@
 @implementation NSString (HTMLChars)
 
 - (NSString *)stringByRemovingHTMLChars {
-    return [[self stringByReplacingOccurrencesOfString:@"&#39;" withString:@"'"]
-                    stringByReplacingOccurrencesOfString:@"&amp;" withString:@"&"];
+    NSMutableString *mutableCopy = [self mutableCopy];
+    
+    [mutableCopy stringByReplacingOccurrencesOfString:@"&#39;" withString:@"'"];
+    [mutableCopy stringByReplacingOccurrencesOfString:@"&amp;" withString:@"&"];
+    
+    return mutableCopy;
 }
 
 @end
