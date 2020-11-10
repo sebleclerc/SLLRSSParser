@@ -87,7 +87,10 @@
                 currentEntry.link = [TBXML textForElement:[TBXML childElementNamed:@"link" parentElement:currentItemElement]];
                 currentEntry.date = [TBXML textForElement:[TBXML childElementNamed:@"pubDate" parentElement:currentItemElement]];
                 currentEntry.excerpt = [TBXML textForElement:[TBXML childElementNamed:@"description" parentElement:currentItemElement]];
-                currentEntry.content = [TBXML textForElement:[TBXML childElementNamed:@"content:encoded" parentElement:currentItemElement]];
+                
+                if ([TBXML childElementNamed:@"content:encoded" parentElement:currentItemElement]) {
+                    currentEntry.content = [TBXML textForElement:[TBXML childElementNamed:@"content:encoded" parentElement:currentItemElement]];
+                }
                 
                 TBXMLElement *imageElement = [TBXML childElementNamed:@"media:content" parentElement:currentItemElement];
 
