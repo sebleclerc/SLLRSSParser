@@ -8,25 +8,42 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 
 ## [0.1.0] 2016-09-02
+
 ### Added
+
 Initial release. Parse RSS feeds.
 
 ## [0.2.0] 2016-09-13
-### Added
-New entry field, imageUrl, for RSS entry ```media:content -> url```
 
-## [0.3.0] 2017-06-28 
+### Added
+
+New entry field, imageUrl, for RSS entry `media:content -> url`
+
+## [0.3.0] 2017-06-28
+
 ### Changed
+
 Fix issue with entry without media:content element.
 Fix parsing HTML characters.
 
 ## [0.4.0] 2017-09-01
-### Added 
+
+### Added
+
 New HTML chars to replace (<, > and @)
 
-### Fixed 
+### Fixed
+
 Memory usage by using NSMutableString
 
 ## [0.4.1] 2017-09-02
-### Fixed 
+
+### Fixed
+
 HTML characters replacing really taking place
+
+## [0.4.2] 2020-11-10
+
+### Fixed
+
+Fix crash when parsing RSS feed without content:encoded element.
